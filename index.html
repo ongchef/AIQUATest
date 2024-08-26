@@ -101,6 +101,17 @@
     <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">I'm Gordon Sung, a Master Student in NTU IM, <br>recently attending the internship program in Appier</h1>
     <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
     <button class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-primary" uk-scroll onclick="appier('event', 'product_purchased', {'product_id': 'Mc001','product_name': 'MacBook M1 Pro', 'category': 'electronics'});">AIQUA Custom Event Test</button>
+    <button id="myButton">Click Me</button>
+    <script>
+    document.getElementById('myButton').addEventListener('click', function() {
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+            'event': 'Button_Clicked',
+            'buttonID': 'myButton',
+            'buttonName': 'Click Me'
+        });
+});
+</script>
 
 </section>
 
