@@ -106,10 +106,9 @@
     document.getElementById('myButton').addEventListener('click', function() {
         window.dataLayer = window.dataLayer || [];
         dataLayer.push({
-            'event': 'page_viewed',
-            'pagePath': 'https://www.example.com/page',
-            'pageTitle': 'Example Page Viewed',
-            'visitorType': 'customer',
+            'event': 'Button_Clicked',
+            'button_id': 'myButton',
+            'buttonName': 'Click Me'
         });
     });
     </script>
@@ -118,9 +117,10 @@
     document.getElementById('page_viewed_demo').addEventListener('click', function() {
         window.dataLayer = window.dataLayer || [];
         dataLayer.push({
-            'event': 'Button_Clicked',
-            'button_id': 'myButton',
-            'buttonName': 'Click Me'
+            'event': 'page_viewed',
+            'pagePath': 'https://www.example.com/page',
+            'pageTitle': 'Example Page Viewed',
+            'visitorType': 'customer',
         });
     });
     </script>
