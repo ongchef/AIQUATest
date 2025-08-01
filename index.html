@@ -12,7 +12,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-hashes' itunes.apple.com stats.g.doubleclick.net siteintercept.qualtrics.com *.qualtrics.com *.quantumgraph.com *.google-analytics.com *.googleapis.com *.googletagmanager.com *.gstatic.com *.nanshanlife.com.tw *.google.com *.google.com.tw *.youtube.com *.qgr.ph *.qgraph.io *.c.appier.net *.nanshan.com.tw live-preview.jp.aiqua.io *.jp.aiqua.io https://aiqua-test.vercel.app data:; img-src siteintercept.qualtrics.com *.qualtrics.com nanshanhealthyblob.blob.core.windows.net *.nanshanlife.com.tw *.facebook.com *.google-analytics.com *.google.com *.googletagmanager.com *.google.com.tw fontmetrics.net 'self' data:; font-src 'self' * data:; frame-src 'self' nslcx.qualtrics.com *.qualtrics.com *.googletagmanager.com *.youtube.com *.nanshanlife.com.tw *.doubleclick.net live-preview.jp.aiqua.io *.jp.aiqua.io https://vercel.live; object-src 'none'; script-src 'self' 'unsafe-inline' https://masa.nanshanlife.com.tw/pixel/ https://r-masa.nanshanlife.com.tw/pixel/ https://q-masa.nanshanlife.com.tw/pixel/ live-preview.jp.aiqua.io *.jp.aiqua.io https://aiqua-test.vercel.app https://vercel.live https://cdn.qgr.ph https://cdn-prd-gcp-jp0.aiqua.io; style-src 'self' 'unsafe-inline' *.googleapis.com; base-uri 'self';">    <link rel="stylesheet" href="css/uikit.css">
+    <!-- <meta http-equiv="Content-Security-Policy" 
+    content="default-src 'self' 'unsafe-hashes' itunes.apple.com stats.g.doubleclick.net siteintercept.qualtrics.com *.qualtrics.com *.quantumgraph.com *.google-analytics.com *.googleapis.com *.googletagmanager.com *.gstatic.com *.nanshanlife.com.tw *.google.com *.google.com.tw *.youtube.com *.qgr.ph *.qgraph.io *.c.appier.net *.nanshan.com.tw live-preview.jp.aiqua.io *.jp.aiqua.io https://aiqua-test.vercel.app data:; 
+            img-src siteintercept.qualtrics.com *.qualtrics.com nanshanhealthyblob.blob.core.windows.net *.nanshanlife.com.tw *.facebook.com *.google-analytics.com *.google.com *.googletagmanager.com *.google.com.tw fontmetrics.net 'self' data:; 
+            font-src 'self' * data:; 
+            frame-src 'self' nslcx.qualtrics.com *.qualtrics.com *.googletagmanager.com *.youtube.com *.nanshanlife.com.tw *.doubleclick.net live-preview.jp.aiqua.io *.jp.aiqua.io https://vercel.live; object-src 'none'; 
+            script-src 'self' 'unsafe-inline' https://masa.nanshanlife.com.tw/pixel/ https://r-masa.nanshanlife.com.tw/pixel/ https://q-masa.nanshanlife.com.tw/pixel/ live-preview.jp.aiqua.io *.jp.aiqua.io https://aiqua-test.vercel.app https://vercel.live https://cdn.qgr.ph https://cdn-prd-gcp-jp0.aiqua.io; 
+            style-src 'self' 'unsafe-inline' *.googleapis.com; base-uri 'self';">  -->
+    <meta http-equiv="Content-Security-Policy"  
+    content= "default-src 'self' 'unsafe-hashes' itunes.apple.com stats.g.doubleclick.net siteintercept.qualtrics.com *.qualtrics.com *.quantumgraph.com *.google-analytics.com *.googleapis.com *.googletagmanager.com *.gstatic.com *.nanshanlife.com.tw *.google.com *.google.com.tw *.youtube.com *.qgr.ph *.qgraph.io *.c.appier.net *.nanshan.com.tw 'nonce-B2yPHKaXnvFWtRChIbabYmUBFZdVfKK' https://aiqua-test.vercel.app data:;
+            img-src siteintercept.qualtrics.com *.qualtrics.com nanshanhealthyblob.blob.core.windows.net *.nanshanlife.com.tw *.facebook.com *.google-analytics.com *.google.com *.googletagmanager.com *.google.com.tw fontmetrics.net 'self' data: https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.tw https://ssl.gstatic.com https://www.gstatic.com www.googletagmanager.com ;
+            font-src 'self' https://fonts.gstatic.com data:;
+            frame-src 'self' live-preview.jp.aiqua.io nslcx.qualtrics.com *.qualtrics.com *.googletagmanager.com *.youtube.com *.nanshanlife.com.tw *.doubleclick.net *.aiqua.io https://bid.g.doubleclick.net https://vercel.live;
+            frame-ancestors 'self' *.nanshanlife.com.tw *.googletagmanager.com *.doubleclick.net;object-src 'none'; 
+            script-src 'strict-dynamic' 'nonce-B2yPHKaXnvFWtRChIbabYmUBFZdVfKK' 'unsafe-inline' live-preview.jp.aiqua.io https://masa.nanshanlife.com.tw/pixel/ https://r-masa.nanshanlife.com.tw/pixel/ https://q-masa.nanshanlife.com.tw/pixel/ *.qgr.ph *.qgraph.io *.appier.net *.aiqua.io https://*.googletagmanager.com https://tagmanager.google.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com https://googleads.g.doubleclick.net *.nanshanlife.com.tw ; 
+            connect-src 'self' https://siteintercept.qualtrics.com *.rollbar.com *.appier.net *.quantumgraph.com *.gocm.c.appier.net https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.tw https://analytics.google.com *.nanshanlife.com.tw ; 
+            style-src 'self' 'unsafe-inline' *.googleapis.com https://tagmanager.google.com https://fonts.googleapis.com ;
+            base-uri 'self';
+            require-trusted-types-for 'script';
+            report-uri https://uat.assure.com.tw/nanshanlife;" >
+    <link rel="stylesheet" href="css/uikit.css">
     <link rel="stylesheet" href="css/styles.css">
     <!-- <script src="js/uikit.js"></script>
     <script src="js/uikit-icons.js"></script> -->
